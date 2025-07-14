@@ -1,7 +1,6 @@
-import os
-from dotenv import load_dotenv
-load_dotenv()
+import streamlit as st
 
-ACCESS_TOKEN = os.getenv("GOTO_ACCESS_TOKEN")
-ACCOUNT_KEY = os.getenv("GOTO_ACCOUNT_KEY")
-BASE_URL = os.getenv("GOTO_BASE_URL", "https://api.goto.com")
+ACCESS_TOKEN = st.secrets["goto"]["GOTO_ACCESS_TOKEN"]
+ACCOUNT_KEY = st.secrets["goto"]["GOTO_ACCOUNT_KEY"]
+BASE_URL = st.secrets["goto"]["GOTO_BASE_URL"]
+

@@ -8,13 +8,13 @@ from api.users import get_users
 
 # --- Streamlit Config ---
 st.set_page_config("GoTo Call Dashboard", layout="wide")
-st.title("Satya's GoTo Call Dashboard")
+st.title("Call Dashboard")
 
 # --- Footer ---
 st.markdown("""
 <hr style="margin-top: 3rem;">
 <div style='text-align: center; padding: 10px; color: gray; font-size: 0.9em;'>
-    <b>Satya's Nurse dashboard</b>
+    <b>Nurse dashboard v0.2</b>
 </div>
 """, unsafe_allow_html=True)
 
